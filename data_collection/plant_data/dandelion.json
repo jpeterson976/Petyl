@@ -1,12 +1,14 @@
 {
-    "name":"",
-    "states":[],
+    "name":"Dandelion",
+    "states":["All"],
     "annual_bloom":"",
-    "perennial_bloom":"",
-    "growth_period":"",
-    "growth_rate":"",
-    "growth_req":"",
-    "water_req":"",
+    "perennial_bloom":"Bloom continuously but mainly in May and June",
+    "growth_period":"15 days to fully mature",
+    "growth_rate":"New plants take 8 to 15 weeks to reach the stage before they can bloom",
+    "growth_req":"1/4 inch deep and 8 inches apart per seedling",
+    "water_req":"Water lightly. Dandelions can grow wildly if watered often.",
     "temperature_range":"",
-    "sun_exposure":""
+    "sun_exposure":"Full Sun ideally, but partial shade ok",
+    "lifespan":"10 to 13 years",
+    "facts":[]
 }
