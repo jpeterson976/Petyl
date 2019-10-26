@@ -4,6 +4,15 @@ const router = express.Router();
 // Plant Model
 const Plant = require('../../Models/Plants');
 
+// @route   GET api/plants/getall
+// @desc    Gets all plant information
+// @access  Public
+router.get('/getall', (req, res) => {
+	Plants.find()
+		.then(plants => res.json(plants))
+		.catch(err => console.log('Error in plants/getall: ' + err));
+});
+
 // @route   GET api/plants
 // @desc    Gets information about the specified plant
 // @access  Public
@@ -11,6 +20,15 @@ router.get('/', (req, res) => {
 	Plants.find({ name: req.body.name })
 		.then(plant => res.json(plant))
 		.catch(err => console.log('Error in plants/get: ' + err));
+});
+
+// @route	GET api/plants/state
+// @desc	Gets all plants located in the specified state
+// @access 	Public
+router.get('/state', (req, res) => {
+	Plants.find({ states: req.body.state || 'all' })
+		.then(plants => res.json(plants))
+		.catch(err => console.log('Error in plants/get/state: ' + err));
 });
 
 // @route   POST api/plants
