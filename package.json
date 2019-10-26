@@ -1,5 +1,5 @@
 {
-	"name": "petylapi",
+	"name": "petyl",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
@@ -7,8 +7,16 @@
 		"start": "node server.js",
 		"server": "nodemon server.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jcbang/Petyl.git"
+	},
 	"author": "",
-	"license": "MIT",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jcbang/Petyl/issues"
+	},
+	"homepage": "https://github.com/jcbang/Petyl#readme",
 	"dependencies": {
 		"body-parser": "^1.19.0",
 		"concurrently": "^5.0.0",
