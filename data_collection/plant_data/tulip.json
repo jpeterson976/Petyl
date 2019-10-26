@@ -1,0 +1,14 @@
+{
+    "name":"Tulip",
+    "states":["California", "Massachusetts", "Maryland", "Michigan", "Ohio", "Pennsylvania"],
+    "annual_bloom":"Grown as cool-season annuals in warmer climates",
+    "perennial_bloom":"Perennials within the US Plant Hardiness zones 3 through 8",
+    "growth_period":"",
+    "growth_rate":"15 weeks",
+    "growth_req":"Moist and soft soil where water cannot be left standing",
+    "water_req":"",
+    "temperature_range":"35 - 45 degrees Fahrenheit (1 - 7 degrees C.)",
+    "sun_exposure":"6 hours per day",
+    "lifespan":"3 to 7 days",
+    "facts":[]
+}

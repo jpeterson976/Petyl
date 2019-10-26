@@ -1,0 +1,14 @@
+{
+    "name":"Rose",
+    "states":["All"],
+    "annual_bloom":"",
+    "perennial_bloom":"6 to 8 week cycles. However home garden Roses may not last long",
+    "growth_period":"Spring after the last frost or in Fall at least six weeks before first frost.",
+    "growth_rate":"Rapid growth under optimal conditions. Tea Roses may reach full height within three to four years",
+    "growth_req":"",
+    "lifespan":"Average lifespan of 35 years",
+    "water_req":"In temperate climates weekly watering is enough. In more arid or windy climates, more frequent watering may be necessary",
+    "temperature_range":"Varies wildly. Variants can survive harsh winters of -30 degrees to 100 degrees fahrenheit (-34.4 to 38 degrees celsius)",
+    "sun_exposure":"6 to 8 hours",
+    "facts":["The Country Dancer rose can withstand the harsh winters of the Rocky Mountains"]
+}
