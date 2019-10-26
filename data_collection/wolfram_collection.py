@@ -1,10 +1,12 @@
+# Code for testing and using the wolfram language client
+# Data is normally piped to a txt file using python wolfram_collection >> file.txt
 from wolframclient.evaluation import WolframLanguageSession
 from wolframclient.language import wl, wlexpr
 session = WolframLanguageSession()
 
 
 # Grab the states
-print(session.evaluate('Interpreter["Plant"]["Tulip"]["StateList"]'))
+print(session.evaluate('Interpreter["Plant"]["Sunflower"]["StateList"]'))
 
 # Does it occur locally?
 # print(session.evaluate('Interpreter["Plant"]["Tulip"]["LocalOccurrence"]'))
