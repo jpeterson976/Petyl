@@ -39,7 +39,7 @@ class SearchParams extends Component {
 	render() {
 		return (
 			<div>
-				<div className='search-params'>
+				<div className='search-params myButtonBox'>
 					<label htmlFor='location'>
 						Location
 						<input
@@ -51,7 +51,7 @@ class SearchParams extends Component {
 							}} // weeny tiney function
 						/>
 					</label>
-					<button onClick={this.onSubmit}>Submit</button>
+					<button className='myButton' onClick={this.onSubmit}>Submit</button>
 				</div>
 				<div>{this.renderPlants()}</div>
 			</div>
