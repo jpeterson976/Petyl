@@ -35,7 +35,5 @@
 
 ## What's next for Petyl
 * Expand the database! Clean, collect and curate more plant data. Add additional information for more experienced gardeners, and give basic instructions for planting. 
-
 * Add more to the site! A glossary of terms for beginners would be very nice. 
-
 * Get the android app up and running. 
