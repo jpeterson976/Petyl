@@ -2,7 +2,7 @@
 	"name": "petyl",
 	"version": "1.0.0",
 	"description": "",
-	"main": "server.js",
+	"main": "index.js",
 	"scripts": {
 		"start": "node server.js",
 		"server": "nodemon server.js",
@@ -15,10 +15,6 @@
 	},
 	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/jcbang/Petyl/issues"
-	},
-	"homepage": "https://github.com/jcbang/Petyl#readme",
 	"dependencies": {
 		"axios": "^0.19.0",
 		"body-parser": "^1.19.0",
@@ -32,5 +28,8 @@
 	"devDependencies": {
 		"nodemon": "^1.19.4",
 		"parcel-bundler": "^1.12.4"
-	}
+	},
+	"engines": {
+		"node": "10.5.0"
+	}	
 }
