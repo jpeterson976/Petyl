@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Plants from './Plants';
 
 class SearchParams extends Component {
 	// First item is the string, second item is the updater function
@@ -21,21 +22,38 @@ class SearchParams extends Component {
 		axios.get('api/plants/state/', loc).then(res => this.setState({ plants: res.data }));
 	};
 
+	renderPlants = () => {
+		if (this.state.plants.length === 0) {
+			console.log('no plants to render :(');
+			return <div></div>;
+		} else {
+			console.log(this.state.plants);
+			return (
+				<div>
+					<Plants plants={this.state.plants} />
+				</div>
+			);
+		}
+	};
+
 	render() {
 		return (
-			<div className='search-params'>
-				<label htmlFor='location'>
-					Location
-					<input
-						id='location'
-						defaultValue={this.state.location}
-						placeholder='location'
-						onChange={e => {
-							this.setState({ location: e.target.value });
-						}} // weeny tiney function
-					/>
-				</label>
-				<button onClick={this.onSubmit}>Submit</button>
+			<div>
+				<div className='search-params'>
+					<label htmlFor='location'>
+						Location
+						<input
+							id='location'
+							defaultValue={this.state.location}
+							placeholder='location'
+							onChange={e => {
+								this.setState({ location: e.target.value });
+							}} // weeny tiney function
+						/>
+					</label>
+					<button onClick={this.onSubmit}>Submit</button>
+				</div>
+				<div>{this.renderPlants()}</div>
 			</div>
 		);
 	}
