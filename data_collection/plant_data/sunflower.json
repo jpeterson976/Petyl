@@ -1,12 +1,12 @@
 {
     "name":"",
     "states":["All"],
-    "annual_bloom":"",
-    "perennial_bloom":"",
-    "growth_period":"",
-    "growth_rate":"",
+    "annual_bloom":"Have typical string-like roots",
+    "perennial_bloom":"Have tubers and rhizomes attached to their roots",
+    "growth_period":"Early spring for perennials, late spring for annuals",
+    "growth_rate":"Very rapid growth for annual sunflowers, much slower growth for perennials",
     "growth_req":"",
-    "water_req":"",
-    "temperature_range":"",
-    "sun_exposure":""
+    "water_req":"Mostly dependent on regular watering. Require 34 inches of water annually",
+    "temperature_range":"70 - 78 degrees Fahrenheit (21 - 25 degrees Celcius)",
+    "sun_exposure":"Prefer as much sunlight as possible"
 }
