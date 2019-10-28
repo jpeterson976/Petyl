@@ -10,16 +10,16 @@ class SearchParams extends Component {
 	};
 
 	componentDidMount() {
-		this.setState({ location: 'Atlanta, GA' });
+		this.setState({ location: 'Georgia' });
 	}
 
 	onSubmit = () => {
 		const { location } = this.state;
 		let loc = {
-			state: location.substr(location.length - 2)
+			state: location.toLowerCase()
 		};
 
-		axios.get('api/plants/state/', loc).then(res => this.setState({ plants: res.data }));
+		axios.post('api/plants/state/', loc).then(res => this.setState({ plants: res.data }));
 	};
 
 	renderPlants = () => {
@@ -51,7 +51,9 @@ class SearchParams extends Component {
 							}} // weeny tiney function
 						/>
 					</label>
-					<button className='myButton' onClick={this.onSubmit}>Submit</button>
+					<button className='myButton' onClick={this.onSubmit}>
+						Submit
+					</button>
 				</div>
 				<div>{this.renderPlants()}</div>
 			</div>

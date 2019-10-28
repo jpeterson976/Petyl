@@ -25,8 +25,8 @@ router.get('/', (req, res) => {
 // @route	GET api/plants/state
 // @desc	Gets all plants located in the specified state
 // @access 	Public
-router.get('/state', (req, res) => {
-	Plants.find({ states: req.body.state, states: 'all' })
+router.post('/state', (req, res) => {
+	Plants.find({ states: req.body.state })
 		.then(plants => res.json(plants))
 		.catch(err => console.log('Error in plants/get/state: ' + err));
 });

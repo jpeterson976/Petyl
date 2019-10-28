@@ -1,12 +1,11 @@
 body {
   background-color: #81a69b;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica Neue",  "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a3d98648241031.58925599ca68a.png');
+  background-image: url('./trees.png');
+  background-repeat: repeat;
 }
 
 code {
@@ -63,15 +62,57 @@ code {
 	top:1px;
 }
 
-.plant-row {
-}
-
 .plant-row:before {
   content:"•    ";
 }
 
 .growth-p:before {
   content:"Growth period: ";
+  font-weight: bold;
+}
+
+.lifespan:before {
+  content:"lifespan: ";
+  font-weight: bold;
+}
+
+.perennial_bloom:before {
+  content:"Perennial Bloom: ";
+  font-weight: bold;
+}
+
+.annual_bloom:before {
+  content:"Annual Bloom: ";
+  font-weight: bold;
+}
+
+.growth_period:before {
+  content:"Growth Period: ";
+  font-weight: bold;
+}
+
+.growth_rate:before {
+  content:"Growth Rate: ";
+  font-weight: bold;
+}
+
+.growth_reqs:before {
+  content:"Growth Requirements: ";
+  font-weight: bold;
+}
+
+.water_reqs:before {
+  content:"Water Requirements: ";
+  font-weight: bold;
+}
+
+.temp_reqs:before {
+  content:"Temperature Requirements: ";
+  font-weight: bold;
+}
+
+.sun_exposure:before {
+  content:"Sun Exposure: ";
   font-weight: bold;
 }
 
